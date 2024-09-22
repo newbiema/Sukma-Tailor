@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sukma Tailors</title>
+  <link rel="stylesheet" href="output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-pink-100 font-museo"> 
+    <div class="flex justify-center items-center min-h-screen ">
+        <div class="w-full max-w-[300px] bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Form Identitas</h2>
+    
+            <form class="flex flex-col" id="contactForm">
+                <input type="text" id="name" class="bg-gray-100 text-gray-800 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150" placeholder="Nama Lengkap" required>
+                <input type="text" id="address" class="bg-gray-100 text-gray-800 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150" placeholder="Alamat" required>
+                <input type="number" id="phone" class="bg-gray-100 text-gray-800 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150" placeholder="No Hp" required>
+                <input type="date" id="orderDate" class="bg-gray-100 text-gray-800 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150" placeholder="Tanggal Pesan">
+                <textarea id="message" name="message" class="bg-gray-100 text-gray-800 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150" placeholder="Pesan"></textarea>
+    
+                <button type="button"
+                class="relative px-8 py-2 rounded-md bg-white isolation-auto z-10 border-2 border-red-700 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full hover:text-white before:-right-full before:hover:right-0 before:rounded-full before:bg-[#A12347] before:-z-10 before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700 inline-flex items-center justify-center px-4 py-3 text-sm font-semibold text-black bg-white border border-gray-200 rounded-lg shadow-sm gap-x-2 hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
+                onclick="sendToWhatsApp()">
+                Kirim
+                </button>
+            </form>
+        </div>
+    </div>
+<!-- Tombol fixed di bagian bawah -->
+<div class="fixed bottom-0 w-full md:hidden flex justify-around gap-4 items-center px-4 py-1 bg-pink-500 rounded-t-[15px] ring-1 font-museo ring-white z-50">
+  <div class="relative group hover:cursor-pointer hover:bg-slate-800 p-2 rounded-full transition-all duration-500">
+    <a href="index.html">
+      <svg width="20" height="20" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M27.9167 30H20.4167C19.2658 30 18.3333 29.1392 18.3333 28.0769V21.1538C18.3333 20.3038 17.5875 19.6154 16.6667 19.6154H13.3333C12.4125 19.6154 11.6667 20.3038 11.6667 21.1538V28.0769C11.6667 29.1392 10.7342 30 9.58333 30H2.08333C0.9325 30 0 29.1392 0 28.0769V13.3946C0 11.6262 0.878334 9.95539 2.3825 8.86154L14.2258 0.246923C14.68 -0.0823077 15.32 -0.0823077 15.7733 0.246923L27.6183 8.86154C29.1225 9.95539 30 11.6254 30 13.3931V28.0769C30 29.1392 29.0675 30 27.9167 30Z" fill="white"></path>
+    </svg>
+  </a>
+    <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-4 w-max px-2 py-1 text-white bg-black rounded-md opacity-0 scale-50 transition-all duration-500 group-hover:opacity-100 group-hover:scale-100">
+      Home
+    </div>
+  </div>
+
+
+</div>
+
+
+<script src="./js/main.js"></script>
+
+</body>
+</html>

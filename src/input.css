@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap')
+
+
+
+
+@media (max-width: 640px) {
+    .group {
+      padding: 1rem;
+    }
+    .ordernow {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+
+
+
+/* Optional custom CSS (if needed for adjustments) */
+@media (max-width: 767px) {
+  #About {
+    padding-top: 80px; /* Sesuaikan nilai ini dengan tinggi navbar pada mobile */
+  }
+}
+
